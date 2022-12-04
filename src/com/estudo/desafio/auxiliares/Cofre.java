@@ -1,4 +1,4 @@
-package com.estudo.desafio.exemplos;
+package com.estudo.desafio.auxiliares;
 
 public class Cofre implements ICofre{
     private boolean cofreEstaAberto = false;

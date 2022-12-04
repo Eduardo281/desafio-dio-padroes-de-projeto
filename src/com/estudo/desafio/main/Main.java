@@ -1,6 +1,6 @@
 package com.estudo.desafio.main;
 
-import com.estudo.desafio.exemplos.Cofre;
+import com.estudo.desafio.auxiliares.Cofre;
 import com.estudo.desafio.exemplos.PrototypeExemplo;
 import com.estudo.desafio.exemplos.ProxyExemplo;
 import com.estudo.desafio.exemplos.SingletonExemplo;
@@ -46,7 +46,7 @@ public class Main{
         cofre.verConteudo();
         cofre.fecharCofre();
         System.out.println();
-        
+
         System.out.println("*****");
     }
 }

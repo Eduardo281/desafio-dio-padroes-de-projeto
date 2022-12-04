@@ -1,5 +1,7 @@
 package com.estudo.desafio.exemplos;
 
+import com.estudo.desafio.auxiliares.ICofre;
+
 public class ProxyExemplo {
     protected ICofre cofre;
 

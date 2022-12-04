@@ -36,14 +36,23 @@ public class Main{
 
         System.out.println("Sobre Proxy:");
         ProxyExemplo cofre = new ProxyExemplo(new Cofre());
+        System.out.printf("\t");
         cofre.verEstado();
+        System.out.printf("\t");
         cofre.verConteudo();
+        System.out.printf("\t");
         cofre.abrirCofre(null);
+        System.out.printf("\t");
         cofre.abrirCofre("123456");
+        System.out.printf("\t");
         cofre.verConteudo();
+        System.out.printf("\t");
         cofre.abrirCofre("senhasenha123");
+        System.out.printf("\t");
         cofre.verEstado();
+        System.out.printf("\t");
         cofre.verConteudo();
+        System.out.printf("\t");
         cofre.fecharCofre();
         System.out.println();
 

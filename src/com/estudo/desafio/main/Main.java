@@ -107,13 +107,6 @@ public class Main{
             System.out.printf(i+" ");
         }
         System.out.println();
-                  // 0  1  2  3  4  5  6  7   8    9  10
-        int[] AAA = {1, 9, 8, 10, 2, 1, 7, 1, 10, 200, -1};
-        ordenador = new StrategyExemplo_Sorter(new BubbleSort());
-        ordenador.ordenar(AAA, 3, 5);
-        for (int i : AAA) {
-            System.out.printf(i+" ");
-        }
 
         System.out.println("*****");
     }

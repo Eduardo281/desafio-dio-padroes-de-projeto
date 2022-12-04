@@ -1,9 +1,13 @@
 package com.estudo.desafio.main;
 
 import com.estudo.desafio.auxiliares.Cofre;
+import com.estudo.desafio.auxiliares.DefaultCase;
+import com.estudo.desafio.auxiliares.LowerCase;
+import com.estudo.desafio.auxiliares.UpperCase;
 import com.estudo.desafio.exemplos.PrototypeExemplo;
 import com.estudo.desafio.exemplos.ProxyExemplo;
 import com.estudo.desafio.exemplos.SingletonExemplo;
+import com.estudo.desafio.exemplos.StateExemplo_Formatador;
 
 public class Main{
     public static void main(String[] args) {
@@ -55,6 +59,14 @@ public class Main{
         System.out.printf("\t");
         cofre.fecharCofre();
         System.out.println();
+
+        System.out.println("Sobre State:");
+        StateExemplo_Formatador formatador = new StateExemplo_Formatador(new DefaultCase());
+        formatador.escrever("\tFrase na formatação \"Default\".");
+        formatador.setEstado(new UpperCase());
+        formatador.escrever("\tFrase formatada para \"UpperCase\".");
+        formatador.setEstado(new LowerCase());
+        formatador.escrever("\tFrase formatada para \"LowerCase\".");
 
         System.out.println("*****");
     }

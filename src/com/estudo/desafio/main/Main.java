@@ -6,6 +6,7 @@ import com.estudo.desafio.auxiliares.DefaultCase;
 import com.estudo.desafio.auxiliares.LowerCase;
 import com.estudo.desafio.auxiliares.QuickSort;
 import com.estudo.desafio.auxiliares.UpperCase;
+import com.estudo.desafio.exemplos.FacadeExemplo;
 import com.estudo.desafio.exemplos.PrototypeExemplo;
 import com.estudo.desafio.exemplos.ProxyExemplo;
 import com.estudo.desafio.exemplos.SingletonExemplo;
@@ -107,6 +108,10 @@ public class Main{
             System.out.printf(i+" ");
         }
         System.out.println();
+
+        System.out.println("Sobre Facade");
+        FacadeExemplo facade = new FacadeExemplo();
+        facade.analisarVetor(vetorBase);
 
         System.out.println("*****");
     }

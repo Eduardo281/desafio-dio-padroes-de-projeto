@@ -22,6 +22,15 @@ Os padrões de projeto "Gang of Four" (GoF), descritos por Erich Gamma, Richard 
 
 ## Implementação
 
-`TODO`
+As implementações trazidas neste repositório cobrem seis dos 24 padrões de projeto GoF. Mais especificamente, temos exemplos dos seguintes padrões:
+
+- **Singleton**: Garante que apenas um único objeto de uma determinada classe seja instanciado (Padrão de Criação);
+- **Prototype**: Permite que objetos criados à partir de uma determinada classe sejam clonados, criando-se outros objetos da mesma classe com os exatos mesmos atributos (Padrão de Criação);
+- **Facade**: Implementação de uma interface simplificada para unificar sistemas e/ou classes distintas e oferecer uma alternativa amigável ao cliente. O nome vem da ideia de fazer uma "fachada" no código, que esconde as complexidades envolvidas (Padrão Estrutural);
+- **Proxy**: É uma classe utilizada como interface para o acesso a outro objeto no código. Permite oferecer a adição de lógica ao acesso, tratando de questões de acesso a dados ou manejo de recursos (Padrão Estrutural);
+- **Strategy**: Permite que o comportamento de um algoritmo seja modificado durante a execução do código, alterando a estratégia de aplicação adotada (Padrão Comportalmental);
+- **State**: Permite alterar o comportamento de um objeto alterando-se o seu "estado" atual (Padrão Comportalmental).
+
+Não é o objetivo deste trabalho cobrir todos os padrões de projeto GoF existentes, mas apenas exemplificar de maneira simplificada a implementação em linguagem Java de alguns deles. Os interessados podem consultar, por exemplo, o repositório [design-patterns-for-humans](https://github.com/design-patterns-for-humans/brazilian-portuguese#-strategy) para obterem mais informações e exemplos de aplicação sobre os 24 padrões.
 
 O repositório original utilizado como referência neste trabalho pode ser acessado [clicando aqui](https://github.com/digitalinnovationone/lab-padroes-projeto-java).

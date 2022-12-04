@@ -31,6 +31,6 @@ As implementações trazidas neste repositório cobrem seis dos 24 padrões de p
 - **Strategy**: Permite que o comportamento de um algoritmo seja modificado durante a execução do código, alterando a estratégia de aplicação adotada (Padrão Comportalmental);
 - **State**: Permite alterar o comportamento de um objeto alterando-se o seu "estado" atual (Padrão Comportalmental).
 
-Não é o objetivo deste trabalho cobrir todos os padrões de projeto GoF existentes, mas apenas exemplificar de maneira simplificada a implementação em linguagem Java de alguns deles. Os interessados podem consultar, por exemplo, o repositório [design-patterns-for-humans](https://github.com/design-patterns-for-humans/brazilian-portuguese#-strategy) para obterem mais informações e exemplos de aplicação sobre os 24 padrões.
+Não é o objetivo deste trabalho cobrir todos os padrões de projeto GoF existentes, mas apenas exemplificar de maneira simplificada a implementação em linguagem Java de alguns deles. Os interessados podem consultar, por exemplo, o repositório [design-patterns-for-humans](https://github.com/design-patterns-for-humans/brazilian-portuguese) para obterem mais informações e exemplos de aplicação sobre os 24 padrões.
 
 O repositório original utilizado como referência neste trabalho pode ser acessado [clicando aqui](https://github.com/digitalinnovationone/lab-padroes-projeto-java).

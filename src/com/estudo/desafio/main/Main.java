@@ -1,6 +1,8 @@
 package com.estudo.desafio.main;
 
+import com.estudo.desafio.exemplos.Cofre;
 import com.estudo.desafio.exemplos.PrototypeExemplo;
+import com.estudo.desafio.exemplos.ProxyExemplo;
 import com.estudo.desafio.exemplos.SingletonExemplo;
 
 public class Main{
@@ -31,6 +33,20 @@ public class Main{
             System.out.println("\tOs objetos obtidos via Prototype são diferentes!");
         }
         System.out.println();
+
+        System.out.println("Sobre Proxy:");
+        ProxyExemplo cofre = new ProxyExemplo(new Cofre());
+        cofre.verEstado();
+        cofre.verConteudo();
+        cofre.abrirCofre(null);
+        cofre.abrirCofre("123456");
+        cofre.verConteudo();
+        cofre.abrirCofre("senhasenha123");
+        cofre.verEstado();
+        cofre.verConteudo();
+        cofre.fecharCofre();
+        System.out.println();
+        
         System.out.println("*****");
     }
 }

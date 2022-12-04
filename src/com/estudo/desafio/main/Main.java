@@ -1,13 +1,16 @@
 package com.estudo.desafio.main;
 
+import com.estudo.desafio.auxiliares.BubbleSort;
 import com.estudo.desafio.auxiliares.Cofre;
 import com.estudo.desafio.auxiliares.DefaultCase;
 import com.estudo.desafio.auxiliares.LowerCase;
+import com.estudo.desafio.auxiliares.QuickSort;
 import com.estudo.desafio.auxiliares.UpperCase;
 import com.estudo.desafio.exemplos.PrototypeExemplo;
 import com.estudo.desafio.exemplos.ProxyExemplo;
 import com.estudo.desafio.exemplos.SingletonExemplo;
 import com.estudo.desafio.exemplos.StateExemplo_Formatador;
+import com.estudo.desafio.exemplos.StrategyExemplo_Sorter;
 
 public class Main{
     public static void main(String[] args) {
@@ -67,6 +70,50 @@ public class Main{
         formatador.escrever("\tFrase formatada para \"UpperCase\".");
         formatador.setEstado(new LowerCase());
         formatador.escrever("\tFrase formatada para \"LowerCase\".");
+        System.out.println();
+
+        System.out.println("Sobre Strategy");
+        int[] vetorBase = {1, 9, 5, 13, 8, 10, 25, 22, 8, 9, 9, 18, 15, 12, 16,
+            5, 8, 17, 21, 14, 23, 1, 7, 4, 9, 15, 18, 19
+        };
+        int[] vetor1 = vetorBase.clone();
+        System.out.println("\tVetor original:");
+        System.out.printf("\t\t");
+        for (int i : vetor1) {
+            System.out.printf(i+" ");
+        }
+        System.out.println();
+        StrategyExemplo_Sorter ordenador = new StrategyExemplo_Sorter(new BubbleSort());
+        ordenador.ordenar(vetor1, 0, vetor1.length-1);
+        System.out.println("\tVetor após o Bubble Sort:");
+        System.out.printf("\t\t");
+        for (int i : vetor1) {
+            System.out.printf(i+" ");
+        }
+        System.out.println();
+
+        int[] vetor2 = vetorBase.clone();
+        System.out.println("\tVetor original:");
+        System.out.printf("\t\t");
+        for (int i : vetor2) {
+            System.out.printf(i+" ");
+        }
+        System.out.println();
+        ordenador = new StrategyExemplo_Sorter(new QuickSort());
+        ordenador.ordenar(vetor2, 0, vetor2.length-1);
+        System.out.println("\tVetor após o Quick Sort:");
+        System.out.printf("\t\t");
+        for (int i : vetor2) {
+            System.out.printf(i+" ");
+        }
+        System.out.println();
+                  // 0  1  2  3  4  5  6  7   8    9  10
+        int[] AAA = {1, 9, 8, 10, 2, 1, 7, 1, 10, 200, -1};
+        ordenador = new StrategyExemplo_Sorter(new BubbleSort());
+        ordenador.ordenar(AAA, 3, 5);
+        for (int i : AAA) {
+            System.out.printf(i+" ");
+        }
 
         System.out.println("*****");
     }

@@ -8,7 +8,7 @@ Nosso objetivo neste trabalho é explorar o assunto "Padrões de Projeto" de uma
 
 ## Definições
 
-Segundo a [página da Wikipedia em português](https://pt.wikipedia.org/wiki/Padr%C3%A3o_de_projeto_de_software), podemos afirmar que 
+Segundo a [página da Wikipedia em português](https://pt.wikipedia.org/wiki/Padr%C3%A3o_de_projeto_de_software), podemos afirmar que:
 
 > "Em Engenharia de Software, um padrão de desenho (português europeu) ou padrão de projeto (português brasileiro) (do inglês *design pattern*) é uma solução geral para um problema que ocorre com frequência dentro de um determinado contexto no projeto de software. (...) Ele é uma descrição ou modelo (*template*) de como resolver um problema que pode ser usado em muitas situações diferentes."
 
